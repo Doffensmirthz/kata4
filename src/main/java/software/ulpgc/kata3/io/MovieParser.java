@@ -1,4 +1,4 @@
-package software.ulpgc.kata2.io;
+package software.ulpgc.kata3.io;
 
 public interface MovieParser {
     public String[] parse(String s);
