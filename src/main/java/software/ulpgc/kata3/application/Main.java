@@ -12,6 +12,8 @@ public class Main {
         RemoteMovieLoader remoteMovieLoader = new RemoteMovieLoader();
         List<Movie> movies = remoteMovieLoader.loadAll();
         Histogram histogram = new HistogramBuilder(movies).build(Movie::releaseYear);
-
+        for(int bin : histogram){
+            System.out.println(bin + " tiene " + histogram.count(bin) + " apariciones");
+        }
     }
 }
